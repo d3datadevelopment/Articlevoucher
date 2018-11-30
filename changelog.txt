@@ -1,0 +1,59 @@
+4.0.1.0
+- Anpassung auf Installation via Composer (Metadata Version 2.0)
+- Umstellung der Dokumentation
+
+4.0.0.1
+- Typo im Sprachbaustein
+- Fehlerhafer Prüfung der Zeitsteuerung an den Rabatten
+- Bug im Zusammenhang mit weiteren Gutscheinen
+
+4.0.0.0
+- flow-theme Unterstützung
+- Migration auf Oxid eShop 6.0.0
+- Support für 4.10.x/5.3.x eingestellt
+
+3.1.0.2
+- #6830 unpassend konfigurierte Rabatte
+
+3.1.0.1
+- #5969 Artikelgutschein-Rabatte bei deaktiviertem ModCfg-Eintrag kostenlos für alle Kunden
+
+3.1.0.0
+- #5770: unnötige Ladevorgänge beim Überarbeiten des Warenkorbs entfernt
+- add: Modulresourcen werden nur geladen, wenn Modul auch aktiv ist
+- fix: Installation angepasst, um mögliche Endlosschleifen zu vermeiden
+
+3.0.3.0
+- fix:  explizite Prüfung auf "nur Artikelgutscheine im Warenkorb"
+- drop: Support für 4.7.x / 5.0.x
+- fix:  Korrektur der Mehrwertsteuerberechnung in Verbindung mit Artikelgutscheinen
+
+3.0.2.1
+- add: Kontrolle auf Gültigkeit, vor dem hinzugefügen zum Warenkorb
+- add: Warenkorbaktualisierung und Meldung ausgeben,
+       falls nach dem Anmelden eines Benutzers (im Login-Popup) ungültige Gutscheine vorhanden sind
+- freigegeben bis PHP 5.6
+
+3.0.2.0
+- Gutscheinartikel können optional als "nicht separat kaufbar" markiert werden
+
+3.0.1.1
+- fix: Gutscheinserienartikel wird dem Warenkorb hinzugefügt obwohl der Gutschein nicht gültig ist
+
+3.0.1.0
+- mehrfache Verwendung von Artikelgutscheinen (sofern erlaubt) legt Artikel auch mehrfach in den Warenkorb
+
+3.0.0.3
+- fehlende Sprachdateien und Templates nachgetragen
+
+3.0.0.2
+- Update der Systemprüfung (d3precheck.php)
+
+3.0.0.1
+- Test auf 4.8 / 5.1
+- kleine Anpassung der Sprachbausteine
+
+3.0.0.0
+- Portierung auf 4.7 / 5.0
+- Integration der automatischen Installation
+- Sprache Englisch hinzugefügt
