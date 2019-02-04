@@ -1,3 +1,6 @@
+4.0.1.1
+- Einheitliche Schreibweise für d3articlevoucher geändert
+
 4.0.1.0
 - Anpassung auf Installation via Composer (Metadata Version 2.0)
 - Umstellung der Dokumentation
