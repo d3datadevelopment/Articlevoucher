@@ -6,51 +6,14 @@
 [{/d3modcfgcheck}]
 
 [{if $mod_d3articlevoucher}]
-[{* product quantity manager *}]
-<td class="quantity">
-    [{if $editable}]
-        <input type="hidden" name="aproducts[[{$basketindex}]][aid]" value="[{$basketitem->getProductId()}]">
-        <input type="hidden" name="aproducts[[{$basketindex}]][basketitemid]" value="[{$basketindex}]">
-        <input type="hidden" name="aproducts[[{$basketindex}]][override]" value="1">
-        [{if $basketitem->isBundle()}]
-            <input type="hidden" name="aproducts[[{$basketindex}]][bundle]" value="1">
-        [{/if}]
-        [{if !$basketitem->isBundle() || !$basketitem->isDiscountArticle()}]
-            [{if $basketproduct->oxarticles__oxisconfigurable->value}]
-                [{if $basketitem->getPersParams()}]
-                    [{foreach key=sVar from=$basketitem->getPersParams() item=aParam}]
-                        <p>
-                            <strong>
-                                <label for="d3label_param1">
-                                    [{oxmultilang ident="d3articlevoucher_PAGE_CHECKOUT_BASKETCONTENTS_PERSPARAM"}]
-                                </label>
-                            </strong>
-                        <input id="d3label_param1" class="textbox persParam" type="text" name="aproducts[[{$basketindex}]][persparam][[{$sVar}]]" value="[{$aParam}]"></p>
-                    [{/foreach}]
-                [{else}]
-                    <p>
-                        <strong>
-                            <label for="d3label_param2">
-                                [{oxmultilang ident="d3articlevoucher_PAGE_CHECKOUT_BASKETCONTENTS_PERSPARAM"}]
-                            </label>
-                        </strong>
-                    <input id="d3label_param2" class="textbox persParam" type="text" name="aproducts[[{$basketindex}]][persparam][details]" value=""></p>
-                [{/if}]
-            [{/if}]
-            <p>
-                <input id="am_[{$smarty.foreach.basketContents.iteration}]" type="text" class="textbox" name="aproducts[[{$basketindex}]][am]" value="[{$basketitem->getAmount()}]" size="2">
-            </p>
-        [{/if}]
+    [{if $oModCfg_d3articlevoucher->isThemeIdMappedTo('azure')}]
+        [{include file='checkout_basketcontents_basketitem_quantity_list_azure.tpl'}]
+    [{elseif $oModCfg_d3articlevoucher->isThemeIdMappedTo('flow')}]
+        [{include file='checkout_basketcontents_basketitem_quantity_list_flow.tpl'}]
+    [{elseif $oModCfg_d3articlevoucher->isThemeIdMappedTo('wave')}]
+        [{include file='checkout_basketcontents_basketitem_quantity_list_wave.tpl'}]
     [{else}]
-        [{if !$basketitem->isBundle() || !$basketitem->isDiscountArticle()}]
-            [{$basketitem->getAmount()}]
-        [{/if}]
     [{/if}]
-
-    [{if $basketitem->getdBundledAmount() > 0 && ($basketitem->isBundle() || $basketitem->isDiscountArticle())}]
-        +[{$basketitem->getdBundledAmount()}]
-    [{/if}]
-</td>
 [{* D3 ArticleVoucher *}]
 [{else}]
     [{$smarty.block.parent}]

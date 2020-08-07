@@ -50,22 +50,15 @@
 
 
             <div class="Links">
-                                    <hr/>
-                                            <a href="https://www.oxidmodule.com" target="_blank">Shop</a>
-                        <br />
-                                            <a href="https://blog.oxidmodule.com" target="_blank">Blog</a>
-                        <br />
-                                            <a href="https://docs.oxidmodule.com/" target="_blank">Dokumentationen</a>
-                        <br />
-                                            <a href="https://faq.oxidmodule.com" target="_blank">FAQ</a>
-                        <br />
-                                            <a href="https://support.shopmodule.com/" target="_blank">D³ Support-Center</a>
-                        <br />
-                                            <a href="https://www.oxidmodule.com/kontakt" target="_blank">Kontakt</a>
-                        <br />
-                                            <a href="https://www.oxidmodule.com/impressum" target="_blank">Impressum</a>
-                        <br />
-                                                </div>
+                <hr/>
+                <a href="https://www.oxidmodule.com" target="_blank">Shop</a><br />
+                <a href="https://blog.oxidmodule.com" target="_blank">Blog</a><br />
+                <a href="https://faq.d3data.de" target="_blank">FAQ</a><br />
+                <a href="https://docs.oxidmodule.com" target="_blank">Dokumentationen</a><br />
+                <a href="https://support.oxidmodule.com" target="_blank">D³ Support Center</a><br />
+                <a href="https://www.oxidmodule.com/kontakt" target="_blank">Kontakt</a><br />
+                <a href="https://www.oxidmodule.com/impressum" target="_blank">Impressum</a><br />
+                            </div>
 
             
                 
@@ -79,91 +72,154 @@
     <div class="Page__header">
         <h1><a href="../changelog/Changelog.html">Changelog</a></h1>
                 <span class="ModifiedDate">
-                        04.02.2019        </span>
+                        07.08.2020        </span>
                     </div>
 
     <div class="s-content">
-        <p>##4.0.1.1</p>
+        <h2 id="page_4-0-2-0-2020-08-07">4.0.2.0 (2020-08-07)</h2>
+<h3 id="page_Added">Added</h3>
+<ul>
+<li>installierbar in OXID 6.2</li>
+</ul>
+<hr />
+<h2 id="page_4-0-1-1-2019-02-04">4.0.1.1 (2019-02-04)</h2>
 <ul>
 <li>Einheitliche Schreibweise für d3articlevoucher geändert</li>
 </ul>
-<p>##4.0.1.0</p>
+<hr />
+<h2 id="page_4-0-1-0-2018-11-29">4.0.1.0 (2018-11-29)</h2>
 <ul>
 <li>Anpassung auf Installation via Composer (Metadata Version 2.0)</li>
 <li>Umstellung der Dokumentation</li>
 </ul>
-<p>##4.0.0.1</p>
+<hr />
+<h2 id="page_4-0-0-1-2018-11-26">4.0.0.1 (2018-11-26)</h2>
 <ul>
 <li>Typo im Sprachbaustein</li>
-<li>Fehlerhafer Prüfung der Zeitsteuerung an den Rabatten</li>
+<li>fehlerhafte Prüfung der Zeitsteuerung an den Rabatten</li>
 <li>Bug im Zusammenhang mit weiteren Gutscheinen</li>
 </ul>
-<p>##4.0.0.0</p>
+<hr />
+<h2 id="page_4-0-0-0-2018-07-10">4.0.0.0 (2018-07-10)</h2>
 <ul>
-<li>flow-theme Unterstützung</li>
+<li>flow-Theme Unterstützung</li>
 <li>Migration auf Oxid eShop 6.0.0</li>
 <li>Support für 4.10.x/5.3.x eingestellt</li>
 </ul>
-<p>##3.1.1.3</p>
+<hr />
+<h2 id="page_3-1-0-3-2018-12-10">3.1.0.3 (2018-12-10)</h2>
 <ul>
-<li>Bereitstellung für ionCube</li>
-<li>Verarbeitung von inkonsistenten Daten an Bestellungen (fehlende Zahlungsart/Versandart/Artikelzugriffe)</li>
+<li>Typo im Sprachbaustein</li>
+<li>Fehlerhafe Prüfung der Zeitsteuerung an den Rabatten</li>
+<li>keine Einlösung weiterer Gutscheine möglich</li>
 </ul>
-<p>##3.1.1.2</p>
+<hr />
+<h2 id="page_3-1-0-2-2017-10-24">3.1.0.2 (2017-10-24)</h2>
 <ul>
-<li>Apache 2.4 - Groß-Kleinschreibung korrigiert</li>
+<li>Im Fall von Abweichungen zwischen der Gutscheinkonfiguration und der
+Rabattkonfiguration konnte es passieren, dass Gutscheine zwar eingelöst
+werden konnten, jedoch leer durchliefen (also kein Abzug und keine
+Dreingabe). Die Konfiguration der Rabatte wird nun ebenfalls geprüft
+und ggf. eine Meldung im Frontend ausgegeben.</li>
 </ul>
-<p>##3.1.1.1</p>
+<hr />
+<h2 id="page_3-1-0-1-2017-01-18">3.1.0.1 (2017-01-18)</h2>
 <ul>
-<li>Unterstützung für Apache 2.4 (ohne Kompatibilitätsmodus) hergestellt</li>
+<li>
+<p>Artikelgutschein-Rabatte bei deaktiviertem ModCfg-Eintrag kostenlos für alle Kunden</p>
+<p>Sofern das Modul vom Connector den Status &quot;nicht aktiv&quot; gemeldet bekommt (Aktiv-Haken
+entfernt oder z.B. Lizenz abgelaufen), werden alle Artikelgutschein-Rabatte ohne
+Prüfung zur Verwendung weitergereicht.
+Alle Kunden bekommen damit die bisher gegen Gutscheincodes verfügbaren Artikel
+komplett kostenlos automatisch in den Warenkorb gelegt.</p>
+<p>Im Bugfix werden diese in dem Fall aus der Liste der verfügbaren Rabatte aussortiert.</p>
+<p>Der Fall ist jedoch weiterhin wichtig, wenn der Shopbetreiber das Modul in den
+Erweiterungen deaktiviert oder deinstalliert. Darauf können wir dann jedoch keinen
+Einfluss mehr nehmen.</p>
+</li>
 </ul>
-<p>##3.1.1.0</p>
+<hr />
+<h2 id="page_3-1-0-0-2017-01-16">3.1.0.0 (2017-01-16)</h2>
 <ul>
-<li>add: Oxid-Flow Themeunterstützung</li>
-<li>Support für 4.7.x / 5.0.x eingestellt</li>
+<li>unnötige Ladevorgänge beim Überarbeiten des Warenkorbs entfernt</li>
+<li>Modulresourcen werden nur geladen, wenn Modul auch aktiv ist</li>
+<li>Bugfix: Installation angepasst, um mögliche Endlosschleifen zu vermeiden</li>
 </ul>
-<p>##3.1.0.0</p>
+<hr />
+<h2 id="page_3-0-3-0-2015-12-09">3.0.3.0 (2015-12-09)</h2>
 <ul>
-<li>offiziell Verfügbar bis PHP 5.6</li>
-<li>Integration des Mobile-Themes</li>
-<li>moduleigene Sprachdateien optimiert sowie quelloffen dem Modul beigelegt</li>
-<li>kleinere Performanceoptimierungen</li>
-<li>Update der Installationsanleitung und Vorabprüfung (d3precheck)</li>
-<li>fix: Aktivprüfung innerhalb der Modulblöcke überarbeitet</li>
-<li>fix: beim abrufen älterer Bestellbestätigungen standen Selectlisten nicht zur Verfügung</li>
-<li>add: Einstellung für eine individuelle Pfadangabe</li>
+<li>Bugfix: explizite Prüfung auf &quot;nur Artikelgutscheine im Warenkorb&quot;</li>
+<li>Bugfix: Korrektur der Mehrwertsteuerberechnung in Verbindung mit Artikelgutscheinen</li>
+<li>Support für Shopversionen 4.7.x / 5.0.x eingestellt</li>
 </ul>
-<p>##3.0.0.0</p>
+<hr />
+<h2 id="page_3-0-2-1-2015-07-21">3.0.2.1 (2015-07-21)</h2>
 <ul>
-<li>Bestellbestätigungsmails können nachträglich generiert werden</li>
-<li>Umstrukturierung von Moduldateien</li>
-<li>Benamung des Modulverzeichnisses an die Id des Modules angepasst</li>
-<li>Umstellung der automatischen Installation auf Modul-Connector basierende Methoden</li>
-<li>Templates für 5.2.x / 4.9.x hinzugefügt</li>
-<li>Update precheck</li>
+<li>Kontrolle auf Gültigkeit, vor dem hinzugefügen zum Warenkorb</li>
+<li>Warenkorbaktualisierung und Meldung ausgeben, falls nach dem Anmelden eines Benutzers
+(im Login-Popup) ungültige Gutscheine vorhanden sind</li>
+<li>freigegeben bis PHP 5.6</li>
 </ul>
-<p>##2.0.0.1</p>
+<hr />
+<h2 id="page_3-0-2-0-2014-12-09">3.0.2.0 (2014-12-09)</h2>
 <ul>
-<li>Templates für EE 5.0.x und 5.1.x</li>
-<li>Templates für PE 4.8.x</li>
-<li>Kompatibilität mit PHP 5.4 hergestellt</li>
+<li>
+<p>Mit dieser Version können die Gutscheinartikel nun optional als &quot;nicht separat kaufbar&quot;
+markiert werden.</p>
+<p>Die Artikel sind weiterhin zu Informationszwecken aufrufbar, können jedoch (außer
+über den Weg der Artikelgutscheine) nicht in den Warenkorb gelegt werden. Diese
+Einstellung lässt sich im Adminbereich des Shops setzen.</p>
+</li>
 </ul>
-<p>##2.0.0.0</p>
+<hr />
+<h2 id="page_3-0-1-1-2014-11-12">3.0.1.1 (2014-11-12)</h2>
 <ul>
-<li>für OXID 4.7 angepasst</li>
-<li>integration der automatischen installation</li>
+<li>Bugfix für: Gutscheinserienartikel wird dem Warenkorb hinzugefügt obwohl der Gutschein
+nicht gültig ist</li>
 </ul>
-<p>##1.1.1.0</p>
+<hr />
+<h2 id="page_3-0-1-0-2014-11-12">3.0.1.0 (2014-11-12)</h2>
 <ul>
-<li>metadata.php + picture added</li>
-<li>ab Version 4.6.0 neuer ordner out'themeName'\tpl\custom</li>
-<li>Ordnerstruktur für Datei 'email_order_cust_print.tpl' angepasst</li>
+<li>mehrfache Verwendung von Artikelgutscheinen (sofern erlaubt) legt Artikel auch mehrfach in den Warenkorb</li>
+</ul>
+<hr />
+<h2 id="page_3-0-0-3-2014-08-05">3.0.0.3 (2014-08-05)</h2>
+<ul>
+<li>Mit dieser Version wurden fehlende Templates und Sprachdateien nachgetragen.</li>
+</ul>
+<hr />
+<h2 id="page_3-0-0-2-2014-05-06">3.0.0.2 (2014-05-06)</h2>
+<ul>
+<li>Update der Systemprüfung (d3precheck.php)</li>
+</ul>
+<hr />
+<h2 id="page_3-0-0-1-2014-03-24">3.0.0.1 (2014-03-24)</h2>
+<ul>
+<li>Anpassung der Sprachbausteine</li>
+<li>Tests auf Shopversion 4.8 / 5.1</li>
+</ul>
+<hr />
+<h2 id="page_3-0-0-0-2013-08-28">3.0.0.0 (2013-08-28)</h2>
+<ul>
+<li>Portierung auf 4.7 / 5.0</li>
+<li>Integration der automatischen Installation</li>
+<li>Sprache Englisch hinzugefügt</li>
+</ul>
+<hr />
+<h2 id="page_2-1-1-0-2012-10-10">2.1.1.0 (2012-10-10)</h2>
+<ul>
+<li>Mit diesem neuen Patch ist das Modul &quot;Artikelgutschein&quot; nun für die Shopversionen 4.5.1 bis 4.6.4 verfügbar.</li>
+</ul>
+<hr />
+<h2 id="page_2-1-0-0-2012-07-12">2.1.0.0 (2012-07-12)</h2>
+<ul>
+<li>Mit diesem Update ist unser Modul Artikelgutschein jetzt auch für die Shopversionen PE 4.5.x verfügbar.</li>
 </ul>
     </div>
 
         <nav>
         <ul class="Pager">
-            <li class=Pager--prev><a href="../index.html">Zurück</a></li>            <li class=Pager--next><a href="../installation/index.html">Weiter</a></li>        </ul>
+            <li class=Pager--prev><a href="../index.html">Zurück</a></li>            <li class=Pager--next><a href="../installation/Installation.html">Weiter</a></li>        </ul>
     </nav>
     </article>
 

@@ -1,10 +1,10 @@
 {
     "title": "<i class='fab fa-d3 d3fa-color-blue'></i> Artikelgutscheine",
-    "moduleversion": "4.0.1.1",
+    "moduleversion": "4.0.2.0",
     "titledesc": "für den Oxid eShop",
     "author": "D³ Data Development",
-    "moduledate": "04.02.2019",
-    "editors": "SK/MG",
+    "moduledate": "07.08.2020",
+    "editors": "",
     "tagline": "",
     "image": "",
     "ignore": {
@@ -26,13 +26,7 @@
         "auto_landing": true,
 
         "links": {
-            "Shop": "https://www.oxidmodule.com",
-            "Blog": "https://blog.oxidmodule.com",
-            "Dokumentationen": "https://docs.oxidmodule.com/",
-            "FAQ": "https://faq.oxidmodule.com",
-            "D³ Support-Center": "https://support.shopmodule.com/",
-            "Kontakt": "https://www.oxidmodule.com/kontakt",
-            "Impressum": "https://www.oxidmodule.com/impressum"
+            "Shop": "https://www.oxidmodule.com"
         },
 
         "powered_by": ""
