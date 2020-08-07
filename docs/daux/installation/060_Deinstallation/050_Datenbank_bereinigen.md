@@ -6,19 +6,17 @@ Das Modul legt Informationen in der Datenbank ab. Sofern diese Daten nicht mehr 
 
 > [!] Legen Sie sich vorab bitte unbedingt eine Sicherung an, um die Daten im Zweifelsfall wiederherstellen zu können.
     
-Für das Modul **{$modulename}** sind dies die folgende Felder:
+Für das Modul **{$modulename}** sind dies die folgende Tabellen und Felder:
 
 * in Tabelle `oxvoucherseries`:  
   * das Feld `D3DISCOUNTID`
-  
   
 Änderungen der Felddefinition:  
 * in Tabelle `oxvoucherseries`:  
   * das Feld `OXDISCOUNTTYPE` von ENUM('percent','absolute','discount') zu ENUM('percent','absolute')
         - **discount** wurde durch das Modul hinzugefügt'
 
-  
-sowie diesen Eintrag:
+sowie diese Einträge in bestehenden Tabellen:
 
 * in Tabelle `d3_cfg_mod`:  
   * den Eintrag `oxmodid = "{$modcfgident}"` **)
