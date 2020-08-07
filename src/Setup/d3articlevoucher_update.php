@@ -1,44 +1,93 @@
-<?php //006f1
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Artikelgutscheine @version 4.0.2.0 PHP56 (07.08.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-2LIyuTp59Stzo6hmCBF9tTJxquuHgGWeh0tsU5K=
+<?php
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @link      http://www.oxidmodule.com
+ */
+
+namespace D3\Articlevoucher\Setup;
+
+use D3\ModCfg\Application\Model\Install\d3install_updatebase;
+
+/**
+ * Class d3articlevoucher_update
+ */
+class d3articlevoucher_update extends d3install_updatebase
+{
+    /*******************************************************************************************/
+    /***** Standardwerte für aufgerufene Funktionen ********************************************/
+    /*******************************************************************************************/
+
+    public $sModKey = 'd3articlevoucher';
+    public $sModName = 'Artikelgutscheine';
+    public $sModVersion = '4.0.2.0';
+    public $sModRevision = '4020';
+    public $sBaseConf = '3QFv2==TFhNQzZkK1hxaHU0V2pmTlFrSVJWdG5wZkhnOCtjNkRldnFwNzhnaHFvOCsrbGlYRmdYZGh5V
+1FKbmsram1ES29JOTNJZUpsS3Urdk1kZTgxVzZFbG5hNlNZUWVZUmlzdDgrNHorRTJTNDJiSThRWlRjU
+zNRK0p0bCtxZGVSREJzd2VLUytuUDNERkhMUXVxZ3hMaVcvZTk5VzQ3cDRhUGRkZm13VHI0eS83R3k5d
+3QvNmNKOHNGNjBaRXpqRWk1bnpoMnVrdjBYT3puNnovS2RWY2JLVDI1aWlmMVN2dnVRb2R5c3RTa1VjQ
+2J1RDF2QTJwNEF1OExmVjhnamd3UXVGWFI2K1dIMGQxY3M4bFk1c3ZiMWpYOVhuUXUyRWorNWY4YlYza
+m1ZZHhyZDkwK0pJa2Zkc1U3L2pYdTBhRWRDZndQakdRbTJzVFU1WmhiUS8xdzdRPT0=';
+    public $sRequirements = '';
+
+    public $sBaseValue = '';
+
+    protected $_aUpdateMethods = array(
+        array(
+            'check' => 'checkModCfgItemExist', // prüft mod-cfg-Eintrag und legt ihn ggf. an
+            'do'    => 'updateModCfgItemExist'
+        ),
+        array(
+            'check' => 'checkFields', // prüft Felder in Tabelle und legt sie ggf. an bzw. modifiziert diese
+            'do'    => 'fixFields'
+        ),
+        array(
+            'check' => 'hasOldModuleFiles',
+            'do'    => 'deleteOldModuleFiles'
+        ),
+        array(
+            'check' => 'checkModCfgSameRevision', // prüft mod-cfg-Eintrag und aktualisiert diesen ggf.
+            'do'    => 'updateModCfgSameRevision'
+        ),
+    );
+
+    // Standardwerte füü checkFields(), _addTable() und fixFields()
+    public $aFields = array(
+        array(
+            'sTableName' => 'oxvoucherseries',
+            'sFieldName' => 'OXDISCOUNTTYPE',
+            'sType' => "ENUM('percent','absolute','discount')",
+            'blNull' => false,
+            'sDefault' => 'absolute',
+            'sComment' => false,
+            'sExtra' => '',
+            'blMultilang' => false,
+        ),
+        array(
+            'sTableName' => 'oxvoucherseries',
+            'sFieldName' => 'D3DISCOUNTID',
+            'sType' => 'VARCHAR(32)',
+            'blNull' => false,
+            'sDefault' => false,
+            'sComment' => 'd3articlevoucher',
+            'sExtra' => '',
+            'blMultilang' => false,
+        ),
+    );
+
+    // alle zu aktualisierenden Module, verwendet nicht onDeactivate-Handler
+    protected $_aRefreshMetaModuleIds = array('d3articlevoucher');
+
+    public $aOldModuleFiles = array(
+        'd3/d3articlevoucher/models/d3articlevoucher_update.php'
+    );
+
+}
