@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 4.0.2.2 (2021-03-21)
+### Fixed
+- Gutschein lässt sich nicht entfernen
+
+---
+
 ## 4.0.2.1 (2020-10-23)
 ### Fixed
 - Steuerbetrag wird mehrfach reduziert

@@ -1,91 +1,34 @@
-<?php //006f1
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Artikelgutscheine @version 4.0.2.1 PHP56 (23.10.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-VSC7vd1W2ygw0x7aOBC81HpL
+<?php
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
+ * @link      http://www.oxidmodule.com
+ */
+
+namespace D3\Articlevoucher\Modules\Application\Controller
+{
+    class d3_basket_updatevoucherinfo_parent extends \OxidEsales\Eshop\Application\Controller\BasketController {}
+}
+
+namespace D3\Articlevoucher\Modules\Application\Controller\Admin
+{
+    class d3_voucherserie_main_addarticle_parent extends \OxidEsales\Eshop\Application\Controller\Admin\VoucherSerieMain {}
+}
+
+namespace D3\Articlevoucher\Modules\Application\Model
+{
+    class d3_oxarticle_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\Article {}
+    class d3_oxbasket_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\Basket {}
+    class d3_oxbasketitem_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\BasketItem {}
+    class d3_oxdiscount_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\Discount {}
+    class d3_oxdiscountlist_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\DiscountList {}
+    class d3_oxvoucher_articlevoucher_parent extends \OxidEsales\Eshop\Application\Model\Voucher {}
+}
