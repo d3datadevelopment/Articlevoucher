@@ -20,26 +20,26 @@ use OxidEsales\Eshop\Application as OxidCore;
 /**
  * Metadata version
  */
-$sMetadataVersion = '2.0';
+$sMetadataVersion = '2.1';
 
 /**
  * Module information
  */
-$aModule = array(
+$aModule = [
 'id'          => 'd3articlevoucher',
 'title'       => 
     '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> '.
     'Artikelgutscheine',
-    'description' =>   array(
+    'description' =>   [
         'de' =>  'Erm&ouml;glicht Artikel als Gutscheinwert zu verwenden',
         'en' =>  '',
-    ),
+    ],
     'thumbnail'   => 'picture.png',
-    'version'     => '4.0.2.2',
+    'version'     => '4.0.3.0',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'http://www.oxidmodule.com/',
-    'extend'       => array(
+    'extend'       => [
         OxidCore\Controller\Admin\VoucherSerieMain::class => D3\Articlevoucher\Modules\Application\Controller\Admin\d3_voucherserie_main_addarticle::class,
         OxidCore\Controller\BasketController::class       => D3\Articlevoucher\Modules\Application\Controller\d3_basket_updatevoucherinfo::class,
 
@@ -50,14 +50,14 @@ $aModule = array(
         OxidCore\Model\Article::class                     => D3\Articlevoucher\Modules\Application\Model\d3_oxarticle_articlevoucher::class,
         OxidCore\Model\Voucher::class                     => D3\Articlevoucher\Modules\Application\Model\d3_oxvoucher_articlevoucher::class
 
-    ),
-    'controllers' => array(
+    ],
+    'controllers' => [
         'd3articlevoucher'          => D3\Articlevoucher\Application\Model\d3articlevoucher::class,
-    ),
-    'events'      => array(
+    ],
+    'events'      => [
       'onActivate' => d3install::class . '::checkUpdateStart',
-    ),
-    'templates'   => array(
+    ],
+    'templates'   => [
         'headitem_d3voucher_css.tpl' => 'd3/articlevoucher/Application/views/admin/blocks/headitem_d3voucher_css.tpl',
         'headitem_d3voucher_js.tpl'  => 'd3/articlevoucher/Application/views/admin/blocks/headitem_d3voucher_js.tpl',
         'd3_voucherserie_main.tpl'   => 'd3/articlevoucher/Application/views/admin/blocks/d3_voucherserie_main.tpl',
@@ -79,57 +79,57 @@ $aModule = array(
         'checkout_basketcontents_basketitem_quantity_list_wave.tpl'     => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_basketitem_quantity_list.tpl',
         'checkout_basketcontents_basketitem_quantity_table_wave.tpl'    => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_basketitem_quantity_table.tpl',
         'checkout_basketcontents_voucherdiscount_wave.tpl'              => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_voucherdiscount.tpl',
-    ),
-    'blocks' => array(
+    ],
+    'blocks' => [
         // Admin Templateerweiterung and CSS / Javascript
-        array(
+        [
             'template' => 'headitem.tpl',
             'block'    => 'admin_headitem_inccss',
             'file'     => 'Application/views/admin/blocks/headitem_d3voucher_css.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'headitem.tpl',
             'block'    => 'admin_headitem_incjs',
             'file'     => 'Application/views/admin/blocks/headitem_d3voucher_js.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'voucherserie_main.tpl',
             'block'    => 'admin_voucherserie_main_form_discount_type',
             'file'     => 'Application/views/admin/blocks/d3_voucherserie_main.tpl'
-        ),
+        ],
         // Frontend Templateerweiterung
-        array(
+        [
             'template' => 'page/checkout/inc/basketcontents.tpl',
             'block'    => 'checkout_basketcontents_voucherdiscount',
             'file'     => 'Application/views/blocks/checkout_basketcontents_voucherdiscount.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'page/checkout/inc/basketcontents.tpl',
             'block'    => 'checkout_basketcontents_summary',
             'file'     => 'Application/views/blocks/checkout_basketcontents_summary.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'page/checkout/inc/basketcontents_list.tpl',
             'block'    => 'checkout_basketcontents_basketitem_quantity',
             'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_quantity_list.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'page/checkout/inc/basketcontents_table.tpl',
             'block'    => 'checkout_basketcontents_basketitem_quantity',
             'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_quantity_table.tpl'
-        ),
-        array(
+        ],
+        [
             'template' => 'page/checkout/basket.tpl',
             'block'    => 'checkout_basket_main',
             'file'     => 'Application/views/blocks/checkout_basket_main_adderrormessages.tpl'
-        ),
-    ),
-    'settings' => array(
-        array(
+        ],
+    ],
+    'settings' => [
+        [
             'group' => 'd3articlevoucher_buyablestate',
             'name'  => 'blD3AVArticlesArentBuyable',
             'type'  => 'bool',
             'value' => 'false'
-        ),
-    )
-);
+        ],
+    ]
+];

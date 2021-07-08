@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 4.0.3.0 (2021-07-08)
+### Added
+- Support für OXID 6.3.x
+
+---
+
 ## 4.0.2.2 (2021-03-21)
 ### Fixed
 - Gutschein lässt sich nicht entfernen
