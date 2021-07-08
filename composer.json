@@ -1,0 +1,46 @@
+{
+  "name": "d3/articlevoucher",
+  "description": "Allows articles to be used as voucher value",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "article",
+    "voucher"
+  ],
+  "authors": [
+    {
+        "name": "D3 Data Development (Inh. Thomas Dartsch)",
+        "email": "info@shopmodule.com",
+        "homepage": "http://www.d3data.com",
+        "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "support@shopmodule.com"
+  },
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "proprietary"
+  ],
+  "suggest": {
+  },
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/articlevoucher"
+    }
+  },
+  "require": {
+    "php": "7.3 - 8.0", "ext-ionCube-Loader": "*",
+    "oxid-esales/oxideshop-ce": "6.3 - 6.8",
+    "d3/modcfg": "^5.3.6.000 || ^6"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3\\Articlevoucher\\": "../../../source/modules/d3/articlevoucher"
+    }
+  }
+}
