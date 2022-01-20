@@ -35,7 +35,7 @@ $aModule = [
         'en' =>  '',
     ],
     'thumbnail'   => 'picture.png',
-    'version'     => '4.0.3.0',
+    'version'     => '4.0.3.1',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'http://www.oxidmodule.com/',
@@ -64,20 +64,20 @@ $aModule = [
 
         //Azure
         'checkout_basket_main_adderrormessages_azure.tpl'                => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basket_main_adderrormessages.tpl',
+        'checkout_basketcontents_basketitem_removecheckbox_azure.tpl'    => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basketcontents_basketitem_removecheckbox.tpl',
+        'checkout_basketcontents_basketitem_quantity_azure.tpl'          => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basketcontents_basketitem_quantity.tpl',
         'checkout_basketcontents_basketitem_quantity_list_azure.tpl'     => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basketcontents_basketitem_quantity_list.tpl',
-        'checkout_basketcontents_basketitem_quantity_table_azure.tpl'    => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basketcontents_basketitem_quantity_table.tpl',
         'checkout_basketcontents_voucherdiscount_azure.tpl'              => 'd3/articlevoucher/Application/views/azure/tpl/checkout/checkout_basketcontents_voucherdiscount.tpl',
 
         //Flow
         'checkout_basket_main_adderrormessages_flow.tpl'                => 'd3/articlevoucher/Application/views/flow/tpl/checkout/checkout_basket_main_adderrormessages.tpl',
-        'checkout_basketcontents_basketitem_quantity_list_flow.tpl'     => 'd3/articlevoucher/Application/views/flow/tpl/checkout/checkout_basketcontents_basketitem_quantity_list.tpl',
         'checkout_basketcontents_basketitem_quantity_table_flow.tpl'    => 'd3/articlevoucher/Application/views/flow/tpl/checkout/checkout_basketcontents_basketitem_quantity_table.tpl',
+        'checkout_basketcontents_basketitem_removecheckbox_table_flow.tpl'  => 'd3/articlevoucher/Application/views/flow/tpl/checkout/checkout_basketcontents_basketitem_removecheckbox_table.tpl',
         'checkout_basketcontents_voucherdiscount_flow.tpl'              => 'd3/articlevoucher/Application/views/flow/tpl/checkout/checkout_basketcontents_voucherdiscount.tpl',
 
         //Wave
         'checkout_basket_main_adderrormessages_wave.tpl'                => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basket_main_adderrormessages.tpl',
         'checkout_basketcontents_basketitem_quantity_list_wave.tpl'     => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_basketitem_quantity_list.tpl',
-        'checkout_basketcontents_basketitem_quantity_table_wave.tpl'    => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_basketitem_quantity_table.tpl',
         'checkout_basketcontents_voucherdiscount_wave.tpl'              => 'd3/articlevoucher/Application/views/wave/tpl/checkout/checkout_basketcontents_voucherdiscount.tpl',
     ],
     'blocks' => [
@@ -109,14 +109,34 @@ $aModule = [
             'file'     => 'Application/views/blocks/checkout_basketcontents_summary.tpl'
         ],
         [
+            'template' => 'page/checkout/inc/basketcontents.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_removecheckbox',
+            'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_removecheckbox.tpl'
+        ],
+        [
+            'template' => 'page/checkout/inc/basketcontents.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_quantity',
+            'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_quantity.tpl'
+        ],
+        [
             'template' => 'page/checkout/inc/basketcontents_list.tpl',
             'block'    => 'checkout_basketcontents_basketitem_quantity',
             'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_quantity_list.tpl'
         ],
         [
+            'template' => 'page/checkout/inc/basketcontents_list.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_removecheckbox',
+            'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_removecheckbox_list.tpl'
+        ],
+        [
             'template' => 'page/checkout/inc/basketcontents_table.tpl',
             'block'    => 'checkout_basketcontents_basketitem_quantity',
             'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_quantity_table.tpl'
+        ],
+        [
+            'template' => 'page/checkout/inc/basketcontents_table.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_removecheckbox',
+            'file'     => 'Application/views/blocks/checkout_basketcontents_basketitem_removecheckbox_table.tpl'
         ],
         [
             'template' => 'page/checkout/basket.tpl',

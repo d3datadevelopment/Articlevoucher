@@ -34,7 +34,7 @@
     }
   },
   "require": {
-    "php": "7.1 - 7.4", "ext-ionCube-Loader": "*",
+    "php": "7.1 - 8.0", "ext-ionCube-Loader": "*",
     "oxid-esales/oxideshop-ce": "6.3 - 6.9",
     "d3/modcfg": "^5.3.6.000 || ^6"
   },
