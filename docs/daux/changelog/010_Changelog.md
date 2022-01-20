@@ -2,6 +2,16 @@
 title: Changelog
 ---
 
+## 4.0.3.1 (2022-01-20)
+### Changed
+- funktionsloser "Entfernen"-Button bzw. -Checkbox bei Gutscheinartikeln entfernt
+
+### Fixed
+- Aktualisierungsbutton der änderbaren Warenkorbmenge wird wieder dargestellt
+- Fehler durch ungesetzte Smarty-Variable beseitigt
+
+---
+
 ## 4.0.3.0 (2021-07-08)
 ### Added
 - Support für OXID 6.3.x

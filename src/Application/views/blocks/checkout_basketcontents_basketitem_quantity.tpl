@@ -2,13 +2,14 @@
 
 [{* D3 ArticleVoucher *}]
 [{d3modcfgcheck modid="d3articlevoucher"}][{/d3modcfgcheck}]
+
 [{if $mod_d3articlevoucher}]
-    [{if $oModCfg_d3articlevoucher->isThemeIdMappedTo('flow')}]
-        [{include file='checkout_basketcontents_basketitem_quantity_table_flow.tpl'}]
+    [{if $oModCfg_d3articlevoucher->isThemeIdMappedTo('azure')}]
+        [{include file='checkout_basketcontents_basketitem_quantity_azure.tpl'}]
     [{else}]
         [{$smarty.block.parent}]
     [{/if}]
-[{* D3 ArticleVoucher *}]
+    [{* D3 ArticleVoucher *}]
 [{else}]
     [{$smarty.block.parent}]
 [{/if}]
