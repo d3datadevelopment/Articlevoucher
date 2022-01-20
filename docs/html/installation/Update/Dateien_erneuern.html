@@ -76,13 +76,14 @@
                     </div>
 
     <div class="s-content">
-        <p>Starten Sie die Konsole Ihres Webservers und wechseln in das Hauptverzeichnis Ihres
+        <h3 id="page_auf-der-Kommandozeile"><strong>auf der Kommandozeile</strong></h3>
+<p>Starten Sie die Konsole Ihres Webservers und wechseln in das Hauptverzeichnis Ihres
 Shops (oberhalb des <code>source</code>- und <code>vendor</code>-Verzeichnisses). Führen Sie dort diesen Befehl aus:</p>
-<pre><code class="language-bash">php composer require d3/articlevoucher:^4.0.3.1 --update-no-dev
+<pre><code class="language-bash">php composer require d3/articlevoucher:^4.1.0.0 --update-no-dev
 </code></pre>
 <p>Im weiteren Ablauf werden Sie gefragt, ob die Moduldateien überschrieben werden sollen. Bestätigen Sie dies für den Eintrag <code>d3/articlevoucher</code>.</p>
 <blockquote class="alert alert-warning">
-<i class='fas fa-exclamation-triangle'></i> <p> Achten Sie darauf, dass die Installation über Composer mit derselben PHP-Version erfolgt, in der auch Ihr Shop installiert ist. Sie erhalten sonst unpassende Modulpakete.</p>
+<i class='fas fa-exclamation-triangle'></i> <p> Achten Sie darauf, dass Composer für die Installation die selbe PHP-Version verwendet, in der auch Ihr Shop ausgeführt wird. Sie erhalten sonst möglicherweise unpassende Modulpakete.</p>
 </blockquote>
 <blockquote class="alert alert-info">
 <i class='fas fa-info-circle'></i> <p> Benötigt Ihre Installation einen anderen Aufruf von Composer, ändern Sie den Befehl bitte entsprechend ab. Für weitere Optionen dieses Befehls lesen Sie bitte die <a href="https://getcomposer.org/doc/03-cli.md#require" class="Link--external">Dokumentation von Composer</a>.</p>

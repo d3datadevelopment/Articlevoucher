@@ -5,19 +5,21 @@
  * Any unauthorized use of this software without a valid license
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
+use D3\ModCfg\Application\Model\d3utils;
+
 $sLangName           = "English";
-$sArticleVoucherLogo = (class_exists(D3\ModCfg\Application\Model\d3utils::class) ? \D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
+$sArticleVoucherLogo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em">';
 
 // -------------------------------
 // RESOURCE IDENTIFIER = STRING
 // -------------------------------
-$aLang = array(
+$aLang = [
     'charset'                               => 'UTF-8',
     'D3ARTVOUCHER_MODUL_NOT_ACTIVE'         => 'Error (' . $sArticleVoucherLogo
         . ' Articlvoucher): License key is missing or module not active',
@@ -36,7 +38,7 @@ $aLang = array(
         . '<li><span class="userinput_or_code">itm</span>: '
         . $sArticleVoucherLogo . ' Articlevoucher: The discount is an article.</li>'
         . '</ul>',
-);
+];
 
 /*
 [{oxmultilang ident='ACTIONS_MAIN_YOUWANTTODELETE'}]

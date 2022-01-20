@@ -7,10 +7,10 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 namespace D3\Articlevoucher\Setup;
@@ -28,42 +28,42 @@ class d3articlevoucher_update extends d3install_updatebase
 
     public $sModKey = 'd3articlevoucher';
     public $sModName = 'Artikelgutscheine';
-    public $sModVersion = '4.0.3.1';
-    public $sModRevision = '4031';
+    public $sModVersion = '4.1.0.0';
+    public $sModRevision = '4100';
     public $sBaseConf = '--------------------------------------------------------------------------------
-ha8v2==bXFvUGlJMVBGN3UySTQ5aUdZQ1ZPWmEyUk1UVGFUMUFhcjk2bnNUb2luQk9yTWNDKzZoQXFPQ
-ng4cVlxUkwxc0EwbTJ4a1NKMVRsUk9yNFZxRUZObUF3Z1ZYeTBHT1RQcmw3TDdXQmZmUXBCSFVNalNhV
-0IzMDVaNzVjdDk1OUVGaW5OTzBjbXIyN0Q4T0tRUVNUQTJSQkhZQW9YYWJORWgvazY2TVNpREpyeUh6d
-WFuYzF5eEl6aURQbTI3cFYxZU1BdmJqZ25TR0gvb2tmWlpPVzVCS0NHam9HZzA4LzJHWTNFRk9sOEpTY
-UV1OTNRRXhCTzI3SXpVQk1KdHpJUnVOQXpObU5WU3pBZ3RLMmZRczFBZHVFWmVnUEdMaUE5STYxWXR4Z
-3hGN3RWVlRhZ3AwQzdINzhhTS9mcWhSak1oa01QWnlWUU9FWFFvZFFKTVlZNUdBPT0=
+2HWv2==dW1lZFhyd3BwV2lUSGVqeEJEeUF6SlZJNTdwVmxuZE9FWVNZeWVkTE5nMkRPT2VNeTVra284T
+28rT1VJSHlBaktBdlZxUFFBWVZ4Z2QwTGlxOHc2RlB3QjlramFMTE9OSXlnU2swOHBxS3lBaUtZQXV3V
+CtndGR0QlZ6WmsxRllTOFVkYy9LbEZhbFNwWk9YcC9SSWhBT1B6T01YNEdCTURDUXM1QmhwbEl2MkUxZ
+UpRUVgyT2FuR01xTkZSS2tQRmJWU08yRzZ1dHlINC9FYk41dnpkbEZBTnIvd0pNem8rUlhtSzVCU1VJc
+FdFQTBycC9WSEhMd2Rob05IZkVVR0l3NnZOTWZSczNic2dCaHNJUFVkUnRDWmVIWldZRWloZW94NFpMW
+XRYWitqZ1h2SkxPUHJNajd5dUNaNllCRW9ISzJLOWNnMTBJNWw3OGtaM3ErQjZ3PT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
 
     public $sBaseValue = '';
 
-    protected $_aUpdateMethods = array(
-        array(
+    protected $_aUpdateMethods = [
+        [
             'check' => 'checkModCfgItemExist', // prüft mod-cfg-Eintrag und legt ihn ggf. an
             'do'    => 'updateModCfgItemExist'
-        ),
-        array(
+        ],
+        [
             'check' => 'checkFields', // prüft Felder in Tabelle und legt sie ggf. an bzw. modifiziert diese
             'do'    => 'fixFields'
-        ),
-        array(
+        ],
+        [
             'check' => 'hasOldModuleFiles',
             'do'    => 'deleteOldModuleFiles'
-        ),
-        array(
+        ],
+        [
             'check' => 'checkModCfgSameRevision', // prüft mod-cfg-Eintrag und aktualisiert diesen ggf.
             'do'    => 'updateModCfgSameRevision'
-        ),
-    );
+        ],
+    ];
 
-    // Standardwerte füü checkFields(), _addTable() und fixFields()
-    public $aFields = array(
-        array(
+    // Standardwerte für checkFields(), _addTable() und fixFields()
+    public $aFields = [
+        [
             'sTableName' => 'oxvoucherseries',
             'sFieldName' => 'OXDISCOUNTTYPE',
             'sType' => "ENUM('percent','absolute','discount')",
@@ -72,8 +72,8 @@ UV1OTNRRXhCTzI3SXpVQk1KdHpJUnVOQXpObU5WU3pBZ3RLMmZRczFBZHVFWmVnUEdMaUE5STYxWXR4Z
             'sComment' => false,
             'sExtra' => '',
             'blMultilang' => false,
-        ),
-        array(
+        ],
+        [
             'sTableName' => 'oxvoucherseries',
             'sFieldName' => 'D3DISCOUNTID',
             'sType' => 'VARCHAR(32)',
@@ -82,14 +82,13 @@ UV1OTNRRXhCTzI3SXpVQk1KdHpJUnVOQXpObU5WU3pBZ3RLMmZRczFBZHVFWmVnUEdMaUE5STYxWXR4Z
             'sComment' => 'd3articlevoucher',
             'sExtra' => '',
             'blMultilang' => false,
-        ),
-    );
+        ],
+    ];
 
     // alle zu aktualisierenden Module, verwendet nicht onDeactivate-Handler
-    protected $_aRefreshMetaModuleIds = array('d3articlevoucher');
+    protected $_aRefreshMetaModuleIds = ['d3articlevoucher'];
 
-    public $aOldModuleFiles = array(
+    public $aOldModuleFiles = [
         'd3/d3articlevoucher/models/d3articlevoucher_update.php'
-    );
-
+    ];
 }
