@@ -7,13 +7,12 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
-use D3\ModCfg\Application\Model\d3utils;
 use D3\ModCfg\Application\Model\Install\d3install;
 use OxidEsales\Eshop\Application as OxidCore;
 
@@ -22,23 +21,25 @@ use OxidEsales\Eshop\Application as OxidCore;
  */
 $sMetadataVersion = '2.1';
 
+$sModuleId = 'd3articlevoucher';
+$logo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em">';
+
 /**
  * Module information
  */
 $aModule = [
-'id'          => 'd3articlevoucher',
-'title'       => 
-    '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em"> '.
-    'Artikelgutscheine',
+'id'          => $sModuleId,
+'title'       =>
+    $logo . 'Artikelgutscheine',
     'description' =>   [
         'de' =>  'Erm&ouml;glicht Artikel als Gutscheinwert zu verwenden',
         'en' =>  '',
     ],
     'thumbnail'   => 'picture.png',
-    'version'     => '4.0.3.1',
+    'version'     => '4.1.0.0',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
-    'url'         => 'http://www.oxidmodule.com/',
+    'url'         => 'https://www.oxidmodule.com/',
     'extend'       => [
         OxidCore\Controller\Admin\VoucherSerieMain::class => D3\Articlevoucher\Modules\Application\Controller\Admin\d3_voucherserie_main_addarticle::class,
         OxidCore\Controller\BasketController::class       => D3\Articlevoucher\Modules\Application\Controller\d3_basket_updatevoucherinfo::class,

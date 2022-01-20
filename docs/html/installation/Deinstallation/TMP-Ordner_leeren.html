@@ -76,10 +76,18 @@
                     </div>
 
     <div class="s-content">
-        <p>Leeren Sie das Verzeichnis <code>tmp</code> über <span class="navi_element">Admin</span> -&gt; <span class="navi_element"><i class='fab fa-d3 d3fa-color-blue'></i> Module</span> -&gt; <span class="navi_element">Modul-Connector</span> -&gt; <span class="navi_element">TMP leeren</span>. Markieren Sie <span class="navi_element">komplett leeren</span> und klicken auf <span class="navi_element">TMP leeren</span>.</p>
+        <h3 id="page_im-Adminbereich"><strong>im Adminbereich</strong></h3>
+<p>Leeren Sie das Verzeichnis <code>tmp</code> über <span class="navi_element">Admin</span> -&gt; <span class="navi_element"><i class='fab fa-d3 d3fa-color-blue'></i> Module</span> -&gt; <span class="navi_element">Modul-Connector</span> -&gt; <span class="navi_element">TMP leeren</span>. Markieren Sie <span class="navi_element">komplett leeren</span> und klicken auf <span class="navi_element">TMP leeren</span>.</p>
 <p>Sofern die Views nicht automatisch aktualisiert werden, führen Sie dies noch durch.</p>
+<h3 id="page_oder-auf-der-Kommandozeile"><strong>oder auf der Kommandozeile</strong></h3>
+<p>Alle TMP-leeren-Aktionen stehen Ihnen ebenfalls auf der Kommandozeile (CLI) zur Verfügung. Führen Sie diesen Befehl im Hauptverzeichnis Ihres Shops (oberhalb des <code>source</code>- und <code>vendor</code>-Verzeichnisses) aus:</p>
+<pre><code class="language-bash">./vendor/bin/d3cleartmp
+</code></pre>
 <blockquote class="alert alert-info">
 <i class='fas fa-info-circle'></i> <p> Erfordert Ihre Installation eine andere Vorgehensweise zum Leeren des Caches oder zum Aktualisieren der Datenbank-Viewtabellen, führen Sie diese bitte aus.</p>
+</blockquote>
+<blockquote class="alert alert-info">
+<i class='fas fa-info-circle'></i> <p> Beim Kommandozeilenaufruf werden Ihnen weitere Optionen gezeigt, mit denen Sie die Aktion gezielt steuern können.</p>
 </blockquote>
     </div>
 

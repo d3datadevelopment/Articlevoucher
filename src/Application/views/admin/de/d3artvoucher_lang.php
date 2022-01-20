@@ -5,20 +5,20 @@
  * Any unauthorized use of this software without a valid license
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
 $sLangName           = "Deutsch";
-$sArticleVoucherLogo = (class_exists(D3\ModCfg\Application\Model\d3utils::class) ? D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo() : 'D&sup3;');
+$sArticleVoucherLogo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="height:1em;width:1em">';
 
 // -------------------------------
 // RESOURCE IDENTIFIER = STRING
 // -------------------------------
 
-$aLang = array(
+$aLang = [
     'charset'                               => 'UTF-8',
     'D3ARTVOUCHER_MODUL_NOT_ACTIVE'         => 'Fehler (' . $sArticleVoucherLogo
         . ' Artikelgutschein): Lizensschlüssel fehlt oder Modul nicht aktiv',
@@ -43,4 +43,4 @@ $aLang = array(
     'HELP_SHOP_MODULE_blD3AVArticlesArentBuyable'       => 'Der zu Artikelrabatten zugeordnete Artikel l&auml;&szlig;t '.
         'sich im Standardshop auch regulär kaufen. Ist dieser Artikel explizit für die Gutscheine angelegt, setzen Sie '.
         'diesen Haken. Dann kann der Artikel noch aufgerufen werden, jedoch nicht mehr in den Warenkorb gelegt werden.',
-);
+];

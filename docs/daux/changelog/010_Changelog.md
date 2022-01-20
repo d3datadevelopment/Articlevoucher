@@ -2,6 +2,18 @@
 title: Changelog
 ---
 
+## 4.1.0.0 (2022-01-18)
+### Added
+- installierbar in OXID 6.4.x
+
+### Changed
+- Layout der Warenkorbübersicht im Wave-Theme angepasst
+
+### Fixed
+- fehlerhafte Funktionsparameter korrigiert
+
+---
+
 ## 4.0.3.1 (2022-01-20)
 ### Changed
 - funktionsloser "Entfernen"-Button bzw. -Checkbox bei Gutscheinartikeln entfernt

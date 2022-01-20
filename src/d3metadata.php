@@ -7,14 +7,14 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  *
- * http://www.shopmodule.com
+ * https://www.d3data.de
  *
  * @copyright (C) D3 Data Development (Inh. Thomas Dartsch)
- * @link      http://www.oxidmodule.com
+ * @link      https://www.oxidmodule.com
  */
 
-$aModule = array(
-    'd3SetupClasses' => array(
+$aModule = [
+    'd3SetupClasses' => [
         D3\Articlevoucher\Setup\d3articlevoucher_update::class,
-    )
-);
+    ]
+];
