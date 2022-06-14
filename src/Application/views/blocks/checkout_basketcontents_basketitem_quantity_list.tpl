@@ -1,0 +1,15 @@
+[{* D3-Block: basketcontents.tpl::checkout_basketcontents_basketitem_quantity *}]
+
+[{* D3 ArticleVoucher *}]
+[{d3modcfgcheck modid="d3articlevoucher"}][{/d3modcfgcheck}]
+
+[{if $mod_d3articlevoucher}]
+    [{if $oModCfg_d3articlevoucher->isThemeIdMappedTo('wave')}]
+        [{include file='checkout_basketcontents_basketitem_quantity_list_wave.tpl'}]
+    [{else}]
+        [{$smarty.block.parent}]
+    [{/if}]
+[{* D3 ArticleVoucher *}]
+[{else}]
+    [{$smarty.block.parent}]
+[{/if}]
