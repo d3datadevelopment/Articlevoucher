@@ -36,7 +36,7 @@
   "require": {
     "php": "^8.0",
     "ext-sourceguardian": "*",
-    "oxid-esales/oxideshop-ce": "6.3 - 6.10",
+    "oxid-esales/oxideshop-ce": "6.3 - 6.13",
     "d3/modcfg": "^5.3.6.000 || ^6"
   },
   "autoload": {
