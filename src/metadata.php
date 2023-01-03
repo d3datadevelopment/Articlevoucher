@@ -30,13 +30,13 @@ $logo = '<img src="https://logos.oxidmodule.com/d3logo.svg" alt="(D3)" style="he
 $aModule = [
 'id'          => $sModuleId,
 'title'       =>
-    $logo . 'Artikelgutscheine',
+    $logo . ' Artikelgutscheine',
     'description' =>   [
         'de' =>  'Erm&ouml;glicht Artikel als Gutscheinwert zu verwenden',
         'en' =>  '',
     ],
     'thumbnail'   => 'picture.png',
-    'version'     => '4.1.0.0',
+    'version'     => '4.1.1.0',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
     'url'         => 'https://www.oxidmodule.com/',
