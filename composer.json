@@ -12,10 +12,10 @@
   ],
   "authors": [
     {
-        "name": "D3 Data Development (Inh. Thomas Dartsch)",
-        "email": "info@shopmodule.com",
-        "homepage": "http://www.d3data.com",
-        "role": "Owner"
+      "name": "D3 Data Development (Inh. Thomas Dartsch)",
+      "email": "info@shopmodule.com",
+      "homepage": "http://www.d3data.com",
+      "role": "Owner"
     }
   ],
   "support": {
@@ -36,7 +36,7 @@
   "require": {
     "php": "^8.0",
     "ext-sourceguardian": "*",
-    "oxid-esales/oxideshop-ce": "6.3 - 6.13",
+    "oxid-esales/oxideshop-ce": "6.3 - 6.14",
     "d3/modcfg": "^5.3.6.000 || ^6"
   },
   "autoload": {
