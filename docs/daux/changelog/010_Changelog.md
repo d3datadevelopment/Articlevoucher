@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 4.1.2.0 (2023-06-15)
+### Added
+- installierbar in OXID 6.5.2
+
+---
+
 ## 4.1.1.0 (2023-01-03)
 ### Added
 - installierbar in OXID 6.5.x

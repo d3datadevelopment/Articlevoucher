@@ -28,15 +28,15 @@ class d3articlevoucher_update extends d3install_updatebase
 
     public $sModKey = 'd3articlevoucher';
     public $sModName = 'Artikelgutscheine';
-    public $sModVersion = '4.1.1.0';
-    public $sModRevision = '4110';
+    public $sModVersion = '4.1.2.0';
+    public $sModRevision = '4120';
     public $sBaseConf = '--------------------------------------------------------------------------------
-RHCv2==bHd4eXd1T2lOZlVkWlp1Vmw5VnlpVFhnL1R1U1VJR0xrWVB4MWJWbVUwQksrQVhBOWlmRGQre
-mFXUlNPK1F2Ukx1VTlabGhPVFdjdkczU1dCVm9jMWRXaU5jejZRRzY2ZWRvZWxCV1lqTXRzL3I5M1R3K
-2R1MjJJK1c0SDkvRU51RG9NaUY1NFYxMzhWOGh5WmxTdXZIZFpZZUJGaHRMOWhKZ3pzUEtHa29pQ3Bhd
-G1OMC85ay9ydytjS0RWSXY2Y3dGZFVsUnVSS2dTOFdmMktEK0Ryb3JUaitnRjFMRmw2T3ZnMzgvUzdLS
-mF4cnRSZjMzUE15ckJLV1VqU25hZWNpRUxJSXZDa1ZPeGd2UUpwMG5NOHBqSzIyYU9DUm9kaUVPekJPN
-itYbHp1azRFaTNTcTFwZWVkNzhVRzBtMVErUzNoM3k2bnQ0UG0xWXNSV2ZtbVpRPT0=
+qp1v2==bUkvMUNHZDJ4eGdveUxmSGdhc3VNczErZ29MRzlIb1FWNENGd0pWR0hacGxQbXNzb2JpTVpId
+3pJNGptMDJTNFE1Q3oxaDBhSitkSXZQYkVuK0lObVFxT05WNFo1OUJ1NE4vMHhZNXl4SlBMaXEreHlOV
+VRBbUxvTFRlc1E5ODBRdWZ6UHhLNW5xNzJGeDJtRlJJUko3ZEVQR0UvdWFFZVNUekp4RjdyeDA2UW0xV
+G96M3BrMzdDMGZUZnptWHRQSTAvTjcza0orekNoaTB6VDZ6OEJKblZLTCtjT3FLR0JtRVZ0WUgrS0cvU
+2t4blBwK3FPb0ZrVlpnQURET2hxVW5mSTdTTnE5SjQwWEhMSGlzeWdMcW1kRnhUaUhtbUpjaTFsSDhoR
+ThRR2tDb1pXK0NlM3NTR25PK3pZUnVjUGpzUGNQLzFKQ05MWGVuK0JlN291MW1RPT0=
 --------------------------------------------------------------------------------';
     public $sRequirements = '';
 
