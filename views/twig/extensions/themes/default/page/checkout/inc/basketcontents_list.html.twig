@@ -1,0 +1,16 @@
+{% extends "page/checkout/inc/basketcontents_list.html.twig" %}
+
+{% block checkout_basketcontents_basketitem_removecheckbox %}
+    {% d3modcfgcheck modid="d3articlevoucher" %}{% endd3modcfgcheck %}
+    {% if mod_d3articlevoucher %}
+        {% if oModCfg_d3articlevoucher.isThemeIdMappedTo('apex') %}
+            {% if basketitem.getdBundledAmount() <=0 or (not basketitem.isBundle() and not basketitem.isDiscountArticle()) %}
+                {{ parent() }}
+            {% endif %}
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

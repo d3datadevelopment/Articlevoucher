@@ -1,0 +1,11 @@
+{% if Errors is iterable and count(Errors)>0 and Errors.loginBoxErrors is iterable and count(Errors.loginBoxErrors) > 0 %}
+    {% for key, oEr in Errors.loginBoxErrors %}
+        {% if oEr.getErrorClassType() == 'oxVoucherException' %}
+            <div class="alert alert-danger">
+                {{ translate({ ident: "COUPON_NOT_ACCEPTED", args: oEr.getValue('voucherNr') }) }}
+                <strong>{{ translate({ ident: "REASON", suffix: "COLON" }) }}</strong>
+                {{ oEr.getOxMessage() }}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}

@@ -1,0 +1,19 @@
+{% extends "headitem.html.twig" %}
+
+{% block admin_headitem_inccss %}
+    {{ parent() }}
+
+    {% d3modcfgcheck modid="d3articlevoucher" %}{% endd3modcfgcheck %}
+    {% if mod_d3articlevoucher and oViewConf.getActiveClassName() == 'voucherserie_main' %}
+        <link rel="stylesheet" type="text/css" href="{{ oViewConf.getModuleUrl('d3modcfg_lib', 'out/admin/src/d3_mod_cfg.css') }}">
+    {% endif %}
+{% endblock %}
+
+{% block admin_headitem_incjs %}
+    {{ parent() }}
+
+    {% d3modcfgcheck modid="d3articlevoucher" %}{% endd3modcfgcheck %}
+    {% if mod_d3articlevoucher and oViewConf.getActiveClassName() == 'voucherserie_main' %}
+        <script type="text/javascript" src="{{ oViewConf.getModuleUrl('d3articlevoucher', 'out/admin/src/js/d3articlevoucher.js') }}"></script>
+    {% endif %}
+{% endblock %}

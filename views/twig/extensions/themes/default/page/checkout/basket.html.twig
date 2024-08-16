@@ -1,0 +1,13 @@
+{% extends "page/checkout/basket.html.twig" %}
+
+{% block checkout_basket_main %}
+    {% d3modcfgcheck modid="d3articlevoucher" %}{% endd3modcfgcheck %}
+    {% if mod_d3articlevoucher %}
+        {% if oModCfg_d3articlevoucher.isThemeIdMappedTo('apex') %}
+            {% include '@d3articlevoucher/apex/tpl/checkout/checkout_basket_main_adderrormessages.html.twig' %}
+        {% else %}
+        {% endif %}
+    {% endif %}
+    {# D3 ArticleVoucher END #}
+    {{ parent() }}
+{% endblock %}
