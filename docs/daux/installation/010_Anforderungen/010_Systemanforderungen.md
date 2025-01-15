@@ -3,7 +3,7 @@ title: Systemanforderungen
 ---
 
 * PHP Version
-    * 7.0.x bis 8.x
+    * 7.1 bis 8.x
 * PHP Decoder
     * installierter ionCube Loader
 * Shopversionen / -editionen
