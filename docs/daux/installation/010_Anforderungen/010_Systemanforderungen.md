@@ -3,7 +3,7 @@ title: Systemanforderungen
 ---
 
 * PHP Version
-    * 7.0.x bis 8.x
+    * 7.1 bis 8.x
 * PHP Decoder
     * installierter ionCube Loader (PHP bis 7.4) *oder*
     * installierter SourceGuardian Loader (PHP ab 8.0)
