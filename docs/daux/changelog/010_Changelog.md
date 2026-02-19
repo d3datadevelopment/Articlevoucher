@@ -8,7 +8,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://git.d3data.de/D3Private/Artikelgutscheine/compare/5.0.0.0...rel_5.x)
+## [Unreleased](https://git.d3data.de/D3Private/Artikelgutscheine/compare/5.0.1.0...rel_5.x)
+
+## [5.0.1.0](https://git.d3data.de/D3Private/Artikelgutscheine/compare/5.0.0.1...5.0.1.0) - 2026-02-19
+### Added
+- installierbar in OXID 7.3 + 7.4
+
+## [5.0.0.1](https://git.d3data.de/D3Private/Artikelgutscheine/compare/5.0.0.0...5.0.0.1) - 2025-11-28
+### Added
+- installierbar in OXID 7.2
 
 ## [5.0.0.0](https://git.d3data.de/D3Private/Artikelgutscheine/compare/4.1.2.0...5.0.0.0) - 2024-08-16
 ### Added
@@ -111,10 +119,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 3.1.0.2 (2017-10-24)
 
-- Im Fall von Abweichungen zwischen der Gutscheinkonfiguration und der 
-  Rabattkonfiguration konnte es passieren, dass Gutscheine zwar eingelöst 
-  werden konnten, jedoch leer durchliefen (also kein Abzug und keine 
-  Dreingabe). Die Konfiguration der Rabatte wird nun ebenfalls geprüft 
+- Im Fall von Abweichungen zwischen der Gutscheinkonfiguration und der
+  Rabattkonfiguration konnte es passieren, dass Gutscheine zwar eingelöst
+  werden konnten, jedoch leer durchliefen (also kein Abzug und keine
+  Dreingabe). Die Konfiguration der Rabatte wird nun ebenfalls geprüft
   und ggf. eine Meldung im Frontend ausgegeben.
 
 ---
@@ -122,18 +130,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 3.1.0.1 (2017-01-18)
 - Artikelgutschein-Rabatte bei deaktiviertem ModCfg-Eintrag kostenlos für alle Kunden
 
-  Sofern das Modul vom Connector den Status "nicht aktiv" gemeldet bekommt (Aktiv-Haken 
-  entfernt oder z.B. Lizenz abgelaufen), werden alle Artikelgutschein-Rabatte ohne 
+  Sofern das Modul vom Connector den Status "nicht aktiv" gemeldet bekommt (Aktiv-Haken
+  entfernt oder z.B. Lizenz abgelaufen), werden alle Artikelgutschein-Rabatte ohne
   Prüfung zur Verwendung weitergereicht.
-  Alle Kunden bekommen damit die bisher gegen Gutscheincodes verfügbaren Artikel 
+  Alle Kunden bekommen damit die bisher gegen Gutscheincodes verfügbaren Artikel
   komplett kostenlos automatisch in den Warenkorb gelegt.
 
   Im Bugfix werden diese in dem Fall aus der Liste der verfügbaren Rabatte aussortiert.
 
-  Der Fall ist jedoch weiterhin wichtig, wenn der Shopbetreiber das Modul in den 
-  Erweiterungen deaktiviert oder deinstalliert. Darauf können wir dann jedoch keinen 
+  Der Fall ist jedoch weiterhin wichtig, wenn der Shopbetreiber das Modul in den
+  Erweiterungen deaktiviert oder deinstalliert. Darauf können wir dann jedoch keinen
   Einfluss mehr nehmen.
-  
+
 ---
 
 ## 3.1.0.0 (2017-01-16)
@@ -152,24 +160,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 3.0.2.1 (2015-07-21)
 - Kontrolle auf Gültigkeit, vor dem hinzugefügen zum Warenkorb
-- Warenkorbaktualisierung und Meldung ausgeben, falls nach dem Anmelden eines Benutzers 
+- Warenkorbaktualisierung und Meldung ausgeben, falls nach dem Anmelden eines Benutzers
   (im Login-Popup) ungültige Gutscheine vorhanden sind
 - freigegeben bis PHP 5.6
 
 ---
 
 ## 3.0.2.0 (2014-12-09)
-- Mit dieser Version können die Gutscheinartikel nun optional als "nicht separat kaufbar" 
+- Mit dieser Version können die Gutscheinartikel nun optional als "nicht separat kaufbar"
   markiert werden.
 
-  Die Artikel sind weiterhin zu Informationszwecken aufrufbar, können jedoch (außer 
-  über den Weg der Artikelgutscheine) nicht in den Warenkorb gelegt werden. Diese 
+  Die Artikel sind weiterhin zu Informationszwecken aufrufbar, können jedoch (außer
+  über den Weg der Artikelgutscheine) nicht in den Warenkorb gelegt werden. Diese
   Einstellung lässt sich im Adminbereich des Shops setzen.
 
 ---
 
 ## 3.0.1.1 (2014-11-12)
-- Bugfix für: Gutscheinserienartikel wird dem Warenkorb hinzugefügt obwohl der Gutschein 
+- Bugfix für: Gutscheinserienartikel wird dem Warenkorb hinzugefügt obwohl der Gutschein
   nicht gültig ist
 
 ---
